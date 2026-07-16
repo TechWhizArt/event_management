@@ -1,0 +1,361 @@
+/* ---------- Google Font ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eef2ff;
+}
+
+/* ---------- Container ---------- */
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+
+  padding: 20px;
+}
+
+/* ---------- Card ---------- */
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+
+  background: #fff;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+  animation: fade 0.5s ease;
+}
+
+/* ---------- Heading ---------- */
+
+.login-card h1 {
+  text-align: center;
+
+  font-size: 32px;
+
+  color: #1e293b;
+
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  text-align: center;
+
+  color: #64748b;
+
+  margin-bottom: 30px;
+
+  font-size: 15px;
+}
+
+/* ---------- Form ---------- */
+
+form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* ---------- Input ---------- */
+
+.input-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  padding: 14px 16px;
+
+  transition: 0.3s;
+}
+
+.input-box:hover {
+  border-color: #2563eb;
+}
+
+.input-box:focus-within {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.input-box svg {
+  color: #64748b;
+}
+
+.input-box input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: transparent;
+}
+
+/* ---------- Eye ---------- */
+
+.eye-btn {
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.eye-btn svg {
+  color: #64748b;
+}
+
+/* ---------- Error ---------- */
+
+.error {
+  color: #dc2626;
+
+  font-size: 13px;
+
+  margin-top: -12px;
+
+  margin-left: 5px;
+}
+
+/* ---------- Remember ---------- */
+
+.login-options {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  font-size: 14px;
+}
+
+.login-options label {
+  display: flex;
+
+  gap: 8px;
+
+  align-items: center;
+
+  color: #475569;
+}
+
+.link-btn {
+  border: none;
+
+  background: none;
+
+  color: #2563eb;
+
+  cursor: pointer;
+
+  font-weight: 500;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Login Button ---------- */
+
+.login-btn {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+/* ---------- Divider ---------- */
+
+.divider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 20px 0;
+
+  color: #94a3b8;
+
+  position: relative;
+}
+
+.divider::before {
+  content: "";
+
+  position: absolute;
+
+  width: 40%;
+
+  height: 1px;
+
+  background: #d1d5db;
+
+  left: 0;
+}
+
+.divider::after {
+  content: "";
+
+  position: absolute;
+
+  width: 40%;
+
+  height: 1px;
+
+  background: #d1d5db;
+
+  right: 0;
+}
+
+/* ---------- Social Buttons ---------- */
+
+.google-btn,
+.github-btn {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  margin-bottom: 12px;
+
+  transition: 0.3s;
+}
+
+.google-btn:hover {
+  background: #f8fafc;
+}
+
+.github-btn:hover {
+  background: #f8fafc;
+}
+
+/* ---------- Signup ---------- */
+
+.signup-text {
+  text-align: center;
+
+  margin-top: 25px;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+.signup-btn {
+  border: none;
+
+  background: none;
+
+  color: #2563eb;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  margin-left: 6px;
+}
+
+.signup-btn:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 500px) {
+  .login-card {
+    padding: 25px;
+  }
+
+  .login-card h1 {
+    font-size: 28px;
+  }
+
+  .login-options {
+    flex-direction: column;
+
+    gap: 15px;
+
+    align-items: flex-start;
+  }
+}
