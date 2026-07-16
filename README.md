@@ -156,7 +156,7 @@ This project helped in understanding:
 
 **Shredhaya Goel**
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/ShredhayaGoel
 
 ---
 
