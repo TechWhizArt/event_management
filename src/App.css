@@ -1,0 +1,331 @@
+:root{
+    --primary:#2563eb;
+    --secondary:rgb(229, 70, 192);
+    --accent:rgb(255, 0, 195);
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --text:#1e293b;
+    --text-light:#64748b;
+
+    --border:#dbeafe;
+    --shadow:0 12px 35px rgba(37,99,235,.12);
+    --hover-shadow:0 20px 45px rgba(37,99,235,.18);
+}
+
+body{
+    background:linear-gradient(135deg,#f8fbff,#eef4ff);
+    width:100%;
+}
+
+/* =========================
+   COUNTER
+========================= */
+
+.counter{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:12px 24px;
+
+    font-size:16px;
+    font-weight:600;
+
+    color:var(--primary);
+
+    background:linear-gradient(135deg,#ffffff,#eef4ff);
+
+    border:2px solid #bfdbfe;
+
+    border-radius:50px;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.10);
+
+    transition:.35s;
+}
+
+.counter:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--primary);
+
+    box-shadow:var(--hover-shadow);
+
+}
+
+.counter:focus-visible{
+
+    outline:3px solid rgba(37,99,235,.3);
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    position:relative;
+
+    background:linear-gradient(135deg,#ffffff,#eef4ff);
+
+    border-radius:25px;
+
+    border:1px solid #dbeafe;
+
+    box-shadow:var(--shadow);
+
+    padding:60px;
+
+    overflow:hidden;
+
+}
+
+/* Decorative Circles */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:rgba(37,99,235,.08);
+
+    border-radius:50%;
+
+    top:-120px;
+    right:-100px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    background:rgba(124,58,237,.08);
+
+    border-radius:50%;
+
+    bottom:-100px;
+    left:-70px;
+
+}
+
+/* =========================
+   CENTER
+========================= */
+
+#center{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+/* =========================
+   NEXT STEPS
+========================= */
+
+#next-steps{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+#next-steps>div{
+
+    flex:1;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border:1px solid #dbeafe;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+#next-steps>div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:var(--hover-shadow);
+
+}
+
+/* Icons */
+
+.icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    color:white;
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+#next-steps ul{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+#next-steps ul a{
+
+    padding:12px 20px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.18);
+
+}
+
+#next-steps ul a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 28px rgba(37,99,235,.28);
+
+}
+
+/* =========================
+   SPACER
+========================= */
+
+#spacer{
+
+    height:70px;
+
+}
+
+/* =========================
+   DECORATIVE BORDER
+========================= */
+
+.ticks{
+
+    position:relative;
+
+    width:100%;
+
+    margin-top:30px;
+
+}
+
+.ticks::before,
+.ticks::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:140px;
+
+    height:4px;
+
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+
+    border-radius:20px;
+
+}
+
+.ticks::before{
+
+    left:0;
+
+}
+
+.ticks::after{
+
+    right:0;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:30px;
+
+}
+
+#next-steps{
+
+flex-direction:column;
+
+}
+
+}
